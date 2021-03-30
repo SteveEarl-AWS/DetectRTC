@@ -106,8 +106,8 @@ function detectDesktopOS() {
 
     switch (os) {
         case 'Mac OS X':
-            if (/Mac OS X (10[\.\_\d]+)/.test(nAgt)) {
-                osVersion = /Mac OS X (10[\.\_\d]+)/.exec(nAgt)[1];
+            if (/Mac OS X (10|11[\.\_\d]+)/.test(nAgt)) {
+                osVersion = /Mac OS X (10|11[\.\_\d]+)/.exec(nAgt)[1];
             }
             break;
         case 'Android':
